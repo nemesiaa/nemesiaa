@@ -1,0 +1,140 @@
+<!-- Programme: Banniere GitHub NGine - visuel vectoriel editable
+     Date: 2026-10-23 - Auteur: NGine - Contact: GitHub @nemesiaa
+     Usage: ouvrir dans un editeur SVG ou lancer npm run build.
+     Produit: dist/ngine-banner.png et dist/ngine-banner.gif via src/render.mjs. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">NGine — Web Developer</title>
+  <desc id="description">Banniere sombre et minimaliste, avec typographie claire et motif triangulaire violet.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080810"/>
+      <stop offset="0.54" stop-color="#10101B"/>
+      <stop offset="1" stop-color="#080810"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="0.72" cy="0.46" r="0.55">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.20"/>
+      <stop offset="0.40" stop-color="#6738B2" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#080810" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="triangle-light" cx="0.48" cy="0.20" r="0.75">
+      <stop offset="0" stop-color="#B9A4FF" stop-opacity="0.18"/>
+      <stop offset="0.62" stop-color="#6F3FCB" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="purple-stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.52" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#6D40D7"/>
+    </linearGradient>
+    <linearGradient id="subtle-stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="grid-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="white" stop-opacity="0.02"/>
+      <stop offset="0.38" stop-color="white" stop-opacity="0.24"/>
+      <stop offset="0.85" stop-color="white" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.10"/>
+    </linearGradient>
+    <mask id="grid-mask">
+      <rect width="1200" height="400" fill="url(#grid-fade)"/>
+    </mask>
+    <pattern id="technical-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#B9A4FF" stroke-opacity="0.22" stroke-width="0.7"/>
+      <circle cx="0" cy="0" r="1" fill="#A78BFA" fill-opacity="0.22"/>
+    </pattern>
+    <filter id="blur-large" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="blur-small" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="canvas-clip"><rect width="1200" height="400" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#canvas-clip)">
+    <rect width="1200" height="400" fill="url(#background)"/>
+    <rect width="1200" height="400" fill="url(#ambient)"/>
+    <path d="M-20 372 C230 350 342 365 540 304 S930 270 1220 304" fill="none" stroke="#8B5CF6" stroke-opacity="0.08" stroke-width="80" filter="url(#blur-large)"/>
+
+    <g id="grid-parallax" transform="translate(0 0)" mask="url(#grid-mask)">
+      <rect x="450" y="0" width="850" height="400" fill="url(#technical-grid)"/>
+      <path d="M602 0V400M746 0V400M890 0V400M1034 0V400" stroke="#A78BFA" stroke-opacity="0.10" stroke-width="0.7"/>
+    </g>
+
+    <g fill="none" stroke="#A78BFA" stroke-width="1">
+      <path d="M0 86H164L236 14H444" opacity="0.10"/>
+      <path d="M0 320H315L444 192H654" opacity="0.09"/>
+      <path d="M1200 72H1110L1071 111" opacity="0.18"/>
+      <path d="M1200 340H1097L1053 296" opacity="0.15"/>
+      <path d="M652 400L791 261" opacity="0.09"/>
+    </g>
+    <g fill="#A78BFA">
+      <circle cx="444" cy="14" r="2" opacity="0.26"/>
+      <circle cx="654" cy="192" r="2" opacity="0.17"/>
+      <circle cx="1097" cy="340" r="2" opacity="0.24"/>
+    </g>
+
+    <g id="light-sweep" transform="translate(180 0)" opacity="0.26">
+      <path d="M625 -80L385 480" fill="none" stroke="#A78BFA" stroke-opacity="0.35" stroke-width="14" filter="url(#blur-small)"/>
+      <path d="M625 -80L385 480" fill="none" stroke="#A78BFA" stroke-opacity="0.22" stroke-width="1"/>
+    </g>
+
+    <path d="M76 72V329" stroke="#A78BFA" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M76 72V130" stroke="url(#purple-stroke)" stroke-width="2"/>
+    <path d="M76 329H136" stroke="#A78BFA" stroke-opacity="0.24" stroke-width="1"/>
+
+    <g id="wordmark">
+      <image href="data:image/svg+xml;base64,PCEtLSBQcm9ncmFtbWU6IExvZ28gdmVjdG9yaWVsIE5HaW5lIC0gdHJhY2UgZGUgbGEgY2FwdHVyZSBmb3VybmllCiAgICAgRGF0ZTogMjAyNi0xMC0yMyAtIEF1dGV1cjogTkdpbmUgLSBDb250YWN0OiBHaXRIdWIgQG5lbWVzaWFhCiAgICAgVXNhZ2U6IG91dnJpciBldCBtb2RpZmllciBkYW5zIHVuIGVkaXRldXIgU1ZHOyBhdWN1bmUgcG9saWNlIGV4dGVybmUgcmVxdWlzZS4gLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTY2IiBoZWlnaHQ9IjIwMSIgdmlld0JveD0iMCAwIDU2NS43MzA4MDcgMjAxLjE2NTI3OSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJOR2luZSI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ibmctcHVycGxlIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzc5NDdGNiIvPjxzdG9wIG9mZnNldD0iMC41NSIgc3RvcC1jb2xvcj0iIzlENzhGQiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0I2QTJGQyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC4wMDAwMDAsMjA1LjcyMzM2Mykgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKZmlsbD0iI0VERTlGRSIgc3Ryb2tlPSJub25lIj4KPHBhdGggZD0iTTI4MDUgMjA0OCBjLTQ2IC0xNiAtOTIgLTY1IC0xMDUgLTExMiAtNDIgLTE0OSAxMzkgLTI2MSAyNTkgLTE2MAoxMzIgMTExIDkgMzI5IC0xNTQgMjcyeiIvPgo8cGF0aCBkPSJNMzU4NSAxNTY1IGMtMTk5IC00NCAtMzQxIC0xNDkgLTQxNSAtMzA3IC00MSAtODggLTUwIC0xODEgLTQ3IC01MDMKbDIgLTI2MCAxMjggLTMgMTI3IC0zIDAgMjk5IGMwIDIzNyAzIDMwOSAxNSAzNDkgMjEgNzEgODkgMTQ0IDE3MyAxODUgNjMgMzEKNzMgMzMgMTcyIDMzIDExOSAwIDE3MyAtMjAgMjU0IC05NSA4OSAtODIgOTEgLTkyIDk0IC00NTMgbDMgLTMxOCAxMjcgMyAxMjcKMyAwIDMxNSBjMCAzNTggLTcgNDAxIC04NyA1MjEgLTEyOSAxOTMgLTQxMyAyOTIgLTY3MyAyMzR6Ii8+CjxwYXRoIGQ9Ik00OTAyIDE1NjUgYy0xNTAgLTMzIC0zMDcgLTE0MCAtMzkxIC0yNjYgLTE2NiAtMjQ5IC03NyAtNjA0IDE5MQotNzU3IDEyNiAtNzIgMTg2IC04NiAzNjMgLTg2IDE0OCAwIDE2NiAyIDIzNCAyNyAxMjcgNDYgMjM5IDEzMSAzMDEgMjI4IDM4CjU5IDM0IDY5IC0zMyA2OSAtMjkgMSAtODYgNSAtMTI3IDEwIC03NSA5IC03NSA5IC0xMjAgLTM0IC01OCAtNTUgLTg0IC03MQotMTUwIC05MCAtMTkwIC01NiAtNDA2IDM5IC00NjkgMjA4IGwtMTkgNTEgNTIgNyBjMjggNCAyNTMgNyA0OTkgNiAzODQgLTIKNDUwIDAgNDU4IDEyIDE1IDIyIDIgMTU4IC0yMSAyMzMgLTg4IDI4MyAtNDMyIDQ1NSAtNzY4IDM4MnogbTMzOSAtMjE2IGMzMQotMTUgNzUgLTQ0IDk5IC02NSA0MSAtMzcgMTAwIC0xMjYgMTAwIC0xNTEgMCAtMTAgLTgyIC0xMyAtMzc2IC0xMyAtMzc1IDAKLTM3NSAwIC0zNjggMjMgMjkgOTYgMTEzIDE3NiAyMjkgMjE5IDc4IDI5IDI0MSAyMiAzMTYgLTEzeiIvPgo8cGF0aCBkPSJNMTg0OSAxNTYwIGMtMjU2IC0zMiAtNDY0IC0yMDggLTUxMCAtNDI5IC0zNSAtMTY5IDE2IC0zMjggMTQ1IC00NTYKMTQ1IC0xNDMgMjQ5IC0xNzUgNTcwIC0xNzcgMTI1IDAgMjI4IC00IDIzMSAtOCAxMCAtMTYgLTYzIC0xMTYgLTEwOSAtMTUxCi02NiAtNTAgLTEzNSAtNzAgLTIzOCAtNzAgLTEyNiAwIC0xOTggMzAgLTI5MyAxMjIgbC02MSA1OCAtODAgLTY5IGMtNDMgLTM5Ci04MSAtNzUgLTgzIC04MSAtMiAtNiAyNiAtMzkgNjIgLTc0IDE5MyAtMTg5IDUxNCAtMjM0IDc3NCAtMTA5IDEwMCA0OCAyMDAKMTQ5IDI0OSAyNTEgNTkgMTIyIDYzIDE3MSA2NCA2OTEgbDAgNDYyIC0xMjAgMCAtMTIwIDAgMCAtNjEgMCAtNjEgLTQ2IDQxCmMtMTA0IDkyIC0yODEgMTQxIC00MzUgMTIxeiBtMjY5IC0yMzQgYzcyIC0zNiAxMzIgLTk0IDE2OCAtMTU4IDYzIC0xMTQgMzAKLTI3NyAtNzQgLTM2OSAtODQgLTc0IC0xNDEgLTk0IC0yNjcgLTk0IC0xMDEgMSAtMTE1IDMgLTE3MCAzMCAtNzMgMzYgLTEzMwo5NCAtMTY2IDE2MCAtMzQgNzEgLTM1IDIwOSAtMSAyNzUgNDEgNzkgOTYgMTI3IDE5MSAxNjcgODMgMzUgMjQyIDMwIDMxOSAtMTF6Ii8+CjxwYXRoIGQ9Ik0yNzIyIDEwMzMgbDMgLTUzOCAxMjggLTMgMTI3IC0zIDAgNTQxIDAgNTQwIC0xMzAgMCAtMTMwIDAgMiAtNTM3eiIvPgo8cGF0aCBkPSJNNDAgMTM5NyBsMCAtMTQ0IDE2MCAtMTA2IGM4OCAtNTkgMTY0IC0xMDcgMTcwIC0xMDcgNiAwIDEwIDU1IDEwCjE0NiBsMCAxNDYgMjAzIC00IGMyMjggLTQgMjYwIC0xMyAzMzkgLTk1IDcxIC03NCA3MyAtODEgNzYgLTQzMSBsMyAtMzEzIDEyNwozIDEyNyAzIDMgMjgwIGMyIDE2MCAtMSAzMTQgLTcgMzYwIC0yNSAxODIgLTE0MyAzMjYgLTMxOCAzODQgLTU5IDIwIC04NCAyMQotNDc4IDIxIGwtNDE1IDAgMCAtMTQzeiIvPgo8L2c+CjxnIGlkPSJ0cmlhbmdsZS1uZyIgYXJpYS1sYWJlbD0iVHJpYW5nbGUgbWF1dmUgZHUgbG9nbyI+PHBhdGggZD0iTTAgODggTDQ5IDEyMiBMMCAxNTUgWiIgZmlsbD0idXJsKCNuZy1wdXJwbGUpIi8+PHBhdGggZD0iTTAgODggTDMxIDEwOSBMMCAxMTcgWiIgZmlsbD0iIzgwNTFGNiIvPjxwYXRoIGQ9Ik0wIDg4IEw0OSAxMjIgTDMxIDEwOSBaIiBmaWxsPSIjQUE4RUZDIi8+PHBhdGggZD0iTTAgMTE3IEwzMSAxMDkgTDQ5IDEyMiBMMTggMTMxIFoiIGZpbGw9IiNBQTk0RkMiLz48cGF0aCBkPSJNMCAxMTcgTDE4IDEzMSBMMCAxNTUgWiIgZmlsbD0iIzcwNDBGMyIvPjxwYXRoIGQ9Ik0xOCAxMzEgTDQ5IDEyMiBMMCAxNTUgWiIgZmlsbD0iIzhENjZGOCIvPjwvZz4KPC9zdmc+Cg==" x="136" y="105" width="390" height="139"/>
+      <path d="M140 274H185" stroke="url(#purple-stroke)" stroke-width="2.3" stroke-linecap="round"/>
+      <circle cx="197" cy="274" r="2.5" fill="#A78BFA"/>
+      <text x="218" y="282" fill="#AAA5C3" font-family="Manrope, Ubuntu Sans, sans-serif" font-size="22" font-weight="500" letter-spacing="4">WEB DEVELOPER</text>
+    </g>
+
+    <g id="halo-pulse" opacity="0.60">
+      <ellipse cx="932" cy="196" rx="161" ry="132" fill="#8B5CF6" opacity="0.23" filter="url(#blur-large)"/>
+      <path d="M837 61L1047 200L837 339Z" fill="#8B5CF6" opacity="0.35" filter="url(#blur-small)"/>
+    </g>
+
+    <g id="triangle-structure">
+      <path d="M818 51L1067 200L818 349Z" fill="url(#triangle-light)" stroke="#A78BFA" stroke-opacity="0.13" stroke-width="1"/>
+      <path d="M837 61L1047 200L837 339Z" fill="#0E0C1A" fill-opacity="0.82" stroke="url(#purple-stroke)" stroke-opacity="0.50" stroke-width="1.7"/>
+      <path d="M837 61L1047 200L837 339" fill="none" stroke="url(#purple-stroke)" stroke-opacity="0.85" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M837 61L947 134L837 181Z" fill="#8B5CF6" fill-opacity="0.13"/>
+      <path d="M837 181L947 134L1047 200L906 231Z" fill="#A78BFA" fill-opacity="0.10"/>
+      <path d="M837 181L906 231L837 339Z" fill="#7848D5" fill-opacity="0.12"/>
+      <path d="M906 231L1047 200L837 339Z" fill="#A78BFA" fill-opacity="0.08"/>
+      <path d="M887 133L984 200L887 267Z" fill="#0D0C19" stroke="#B7A4FF" stroke-opacity="0.34" stroke-width="1"/>
+      <path d="M887 133L942 170" stroke="#B7A4FF" stroke-opacity="0.16" stroke-width="1"/>
+      <path d="M837 61V339" stroke="#C8B8FF" stroke-opacity="0.58" stroke-width="3"/>
+      <circle cx="1047" cy="200" r="4" fill="#C9BBFF"/>
+      <circle cx="1047" cy="200" r="11" fill="#A78BFA" opacity="0.33" filter="url(#blur-small)"/>
+    </g>
+
+    <g id="orbit" fill="none" stroke="#B29BFA" stroke-width="0.9">
+      <path d="M745 180C775 87 883 49 973 65" stroke-opacity="0.19"/>
+      <path d="M1045 110C1118 174 1110 269 1042 328" stroke-opacity="0.17"/>
+      <path d="M842 338C793 322 763 284 748 248" stroke-opacity="0.13"/>
+      <circle cx="745" cy="180" r="2" fill="#A78BFA" fill-opacity="0.44" stroke="none"/>
+      <circle cx="1042" cy="328" r="2" fill="#A78BFA" fill-opacity="0.40" stroke="none"/>
+    </g>
+
+    <g id="particles-a" transform="translate(0 0)" fill="#B4A0FF">
+      <circle cx="694" cy="107" r="1.6" opacity="0.42"/>
+      <circle cx="805" cy="45" r="1.1" opacity="0.30"/>
+      <circle cx="1114" cy="109" r="1.4" opacity="0.31"/>
+      <circle cx="1148" cy="248" r="1.1" opacity="0.38"/>
+      <circle cx="725" cy="318" r="1.2" opacity="0.30"/>
+    </g>
+    <g id="particles-b" transform="translate(0 0)" fill="#EDE9FE">
+      <circle cx="770" cy="116" r="1" opacity="0.44"/>
+      <circle cx="1086" cy="176" r="1.1" opacity="0.40"/>
+      <circle cx="827" cy="344" r="1.1" opacity="0.36"/>
+    </g>
+
+    <path d="M77 350H1123" stroke="url(#subtle-stroke)" stroke-width="0.8"/>
+    <path d="M77 44H1123" stroke="url(#subtle-stroke)" stroke-width="0.8"/>
+    <rect x="0.5" y="0.5" width="1199" height="399" fill="none" stroke="#EDE9FE" stroke-opacity="0.055"/>
+  </g>
+</svg>
