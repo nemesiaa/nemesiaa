@@ -1,13 +1,17 @@
+<p align="center">
+  <img src="./assets/ngine-banner.gif" alt="NGine — Web Developer" width="100%">
+</p>
+
 <h1 align="center">Hello, moi c'est amnesiann ✨</h1>
 
 <p align="center">
-  <strong>Développement web · Interfaces · Création numérique</strong><br>
+  <strong>NGine · Création de sites web · Services informatiques</strong><br>
   Des idées, du code et des projets qui prennent vie ✨
 </p>
 
 <p align="center">
-  <a href="https://ngine.be"><img src="https://img.shields.io/badge/Mon_site-0369A1?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Visiter le site NGine"></a>
-  <a href="https://github.com/nemesiaa?tab=repositories"><img src="https://img.shields.io/badge/Explorer_mes_projets-0284C7?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explorer mes projets sur GitHub"></a>
+  <a href="https://ngine.be"><img src="https://img.shields.io/badge/Mon_site-6D28D9?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Visiter le site NGine"></a>
+  <a href="https://github.com/nemesiaa?tab=repositories"><img src="https://img.shields.io/badge/Explorer_mes_projets-8B5CF6?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explorer mes projets sur GitHub"></a>
 </p>
 
 ---
